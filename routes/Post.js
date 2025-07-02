@@ -12,7 +12,7 @@ const imagekit = new ImageKit({
 });
 
 // Signature route
-router.get("/get-imagekit", (req, res) => {
+router.get("/get-imagekit/ready", (req, res) => {
   try {
     const result = imagekit.getAuthenticationParameters();
     res.json(result);
